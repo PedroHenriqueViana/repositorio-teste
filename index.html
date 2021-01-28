@@ -7,13 +7,25 @@
     <title>SwapChat</title>
 </head>
 <body>
-    <img src="./SwapChat Logo.jpg">
-    <h1>SwapChat</h1>
+    <div class="logo">
+        <img src="./SwapChat Logo.jpg">
+        <h1>SwapChat</h1>
+    </div>
     <div class="login">
-        <h2>Usuario</h2>
-        <input type="email" class="entrada" placeholder="Digite o número de celular ou E-mail"><br>
-        <h2>Senha</h2>
-        <input type="password" class="entrada" placeholder="Digite sua senha"><br>
+        <p class="login-topo">Para acessar utilize seu celular ou Email</p>
+        <form action="#" class="login1">
+            <div class="login-input" id="login-email">
+                <input type="email" placeholder="Email" class="login--field" required>
+                <p class="form--error-text form--error">Email Inválido</p>
+            </div>
+            <div class="login-input" id="login-senha">
+                <input type="password" placeholder="Senha" class="login--field" required>
+                <p class="form--error-text form--error">Senha Incorreta</p>
+            </div>
+            <a class="esqueciSenha" href="https://www.google.com.br/webhp?tab=rw&authuser=0">Esqueci minha senha</a><br>
+            <button class="cadastro">CRIAR CONTA</button>
+            <button class="entrar">Entrar</button>
+        </form>
     </div>
     <script src="./script.js"></script>
 </body>
